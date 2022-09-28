@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My vanilla</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+      charset="UTF-8"
+    />
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="canvas">
+        <div class="contentContainer">
+          <div>
+            <h1 class="title">Check your typing skills in 60 seconds</h1>
+            <h4 class="subTitle">
+              Type away to join 150+ million test takers!
+            </h4>
+          </div>
+          <div class="selectContainer">
+            <div class="selectItem">
+              <div class="icon">
+                <img class="icon" src="src/icon/clock.svg" alt="" />
+              </div>
+              <div class="selectTime">
+                <select class="selectInput" id="timeValue">
+                  <option value="60">1 Minute Test</option>
+                  <option value="120">2 Minute Test</option>
+                  <option value="180">3 Minute Test</option>
+                  <option value="300">5 Minute Test</option>
+                  <option value="600">10 Minute Test</option>
+                </select>
+              </div>
+            </div>
+            <div class="selectItem">
+              <div class="icon">
+                <img class="icon" src="src/icon/file.svg" alt="" />
+              </div>
+              <div class="selectTime">
+                <select class="selectInput">
+                  <option>Easy Text</option>
+                  <option>Medium Text</option>
+                  <option>Hard Text</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="btnContainer">
+            <button id="startbtn" class="btn">Start Test</button>
+          </div>
+        </div>
+        <div class="typeContainer">
+          <div class="typeHeader">
+            <div class="timer" id="timer">01:00</div>
+            <div class="mode">
+              <div class="modeTitle">MODE</div>
+              <div class="modeType">
+                <div class="activeMode">Normal</div>
+                <div>Pro</div>
+              </div>
+            </div>
+            <div class="close" id="closebtn">
+              CLOSE <span class="closex">x</span>
+            </div>
+          </div>
+          <div class="typeBody">
+            <div class="typeBodyLineContainer"></div>
+            <div class="typeBodyText"></div>
+          </div>
+        </div>
+        <div class="resaultContainer">
+          <div class="">
+            <button id="retakebtn" class="btn">RETAKE TEST</button>
+          </div>
+          <div class="resaultTitle">
+            <div class="icon">
+              <img class="icon" src="src/icon/tachometer.svg" alt="" />
+            </div>
+            Your Test Score
+          </div>
+          <div class="resault">
+            <div class="resaultBar">
+              <div class="circleContainer">
+                <div class="circle">
+                  <div id="WPM">0</div>
+                  <div class="circleDescription">WPM</div>
+                </div>
+                <div class="circleDescription">Typing Speed</div>
+              </div>
+              <div class="multiply">x</div>
+              <div class="circleContainer">
+                <div class="circle">
+                  <div><span id="correctPercent">0</span> %</div>
+                  <div class="circleDescription">
+                    <span id="wrongWord">0</span> typos
+                  </div>
+                </div>
+                <div class="circleDescription">Accuracy</div>
+              </div>
+              <div class="multiply">=</div>
+              <div class="circleContainer r">
+                <div class="circle rc">
+                  <div id="netWPM">0</div>
+                  <div class="circleDescription r">WPM</div>
+                </div>
+                <div class="circleDescription">Net Speed</div>
+              </div>
+            </div>
+          </div>
+          <div class="chartContainer">
+            <div class="chartBackground"></div>
+            <div class="chartWrapper">
+              <div class="chart">
+                <!-- <div class="data">
+                  <div class="chartbin"></div>
+                </div> -->
+              </div>
+              <div class="chartdates">
+                <!-- <div>h</div> -->
+              </div>
+            </div>
+            <div class="chartLines">
+              <div class="chartLineContainer">
+                <div class="chartLine"></div>
+                100
+              </div>
+              <div class="chartLineContainer">
+                <div class="chartLine"></div>
+                85
+              </div>
+              <div class="chartLineContainer">
+                <div class="chartLine"></div>
+                65
+              </div>
+              <div class="chartLineContainer">
+                <div class="chartLine"></div>
+                45
+              </div>
+              <div class="chartLineContainer">
+                <div class="chartLine"></div>
+                25
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="imgContainer">
+          <img class="lady" src="/src/img/lady.svg" />
+          <div class="groundContainer">
+            <img class="ground" src="/src/img/center-back-light.svg" />
+          </div>
+          <img class="gentleman" src="/src/img/gentleman.svg" />
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="src/index.js"></script>
+  </body>
+</html>
